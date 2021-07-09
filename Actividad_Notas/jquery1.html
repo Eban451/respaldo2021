@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src=""></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <script>
+
+        $(document).ready(function () {
+
+
+
+            $('p').click(function () {
+
+                $('p').hide("slow");
+
+            })
+
+
+
+            $('#esconder').click(function () {
+
+                $('img').hide();
+
+            })
+
+
+
+            $('#mostrar').click(function () {
+
+                $('img').show();
+
+            })
+
+            $('#toggle').click(function () {
+
+                $('img').toggle('slow');
+
+            })
+
+            $('#toggle').click(function () {
+
+                $('img').toggle('slow');
+
+            })
+
+            $('#slideAbajo').click(function () {
+
+                $('img').SlideDown();
+
+            })
+
+
+
+        })
+
+    </script>
+
+</head>
+
+<body>
+    <h2>Efectos Jquery</h2>
+
+    <p>Este es un párrafo</p>
+    <p>Este es un párrafo</p>
+    <p>Este es un párrafo</p>
+
+
+    <ul>
+        <li id="esconder">Esconder la imagen (.hide)</li>
+        <li id="mostrar">Mostrar la imagen (.show)</li>
+        <li id="toggle">Mostrar y esconder la imagen (.toggle)</li>
+        <li id="slideAbajo">Mostrar y esconder la imagen> (.slideDown)</li>
+        <li id="slideArriba">Mostrar y esconder la imagen> (.slideUp)</li>
+    </ul>
+
+    <img src="assets/img/3tragosrefrescantesconmenta.jpg" alt="">
+
+</body>
+
+</html>
